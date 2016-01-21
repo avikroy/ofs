@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OffersViewController">
+            <connections>
+                <outlet property="tblDisplay" destination="fjR-pJ-iuU" id="0H7-i8-wO4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K97-aS-x7H">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fjR-pJ-iuU">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="pkg-hX-UUi"/>
+                        <outlet property="delegate" destination="-1" id="2cS-5l-sjW"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" red="0.60067349137931036" green="0.74140625000000004" blue="0.92874461206896552" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fjR-pJ-iuU" firstAttribute="top" secondItem="K97-aS-x7H" secondAttribute="top" id="0L1-1e-pQa"/>
+                <constraint firstItem="K97-aS-x7H" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="1AI-Il-IDJ"/>
+                <constraint firstItem="K97-aS-x7H" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8Hf-AO-h6U"/>
+                <constraint firstItem="fjR-pJ-iuU" firstAttribute="leading" secondItem="K97-aS-x7H" secondAttribute="leading" id="ALx-Sc-vsz"/>
+                <constraint firstItem="fjR-pJ-iuU" firstAttribute="bottom" secondItem="K97-aS-x7H" secondAttribute="bottom" id="GjP-7J-geX"/>
+                <constraint firstItem="fjR-pJ-iuU" firstAttribute="trailing" secondItem="K97-aS-x7H" secondAttribute="trailing" id="GrG-2H-osV"/>
+                <constraint firstAttribute="trailing" secondItem="K97-aS-x7H" secondAttribute="trailing" id="hfw-jT-qkD"/>
+                <constraint firstAttribute="bottom" secondItem="K97-aS-x7H" secondAttribute="bottom" id="zA9-TF-zqa"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

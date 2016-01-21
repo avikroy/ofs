@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CitySelectionViewController">
+            <connections>
+                <outlet property="tblDisplay" destination="ilC-hy-JOR" id="BJV-Fb-1JR"/>
+                <outlet property="view" destination="1hp-O9-hpg" id="Hft-dC-4Ws"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="1hp-O9-hpg">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BuJ-Tj-HAP">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ilC-hy-JOR">
+                    <rect key="frame" x="41" y="86" width="519" height="427"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qH7-xF-8BG"/>
+                        <outlet property="delegate" destination="-1" id="Rba-SA-tkc"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BuJ-Tj-HAP" secondAttribute="trailing" id="7Rv-gK-QRY"/>
+                <constraint firstAttribute="bottom" secondItem="BuJ-Tj-HAP" secondAttribute="bottom" id="97W-3f-eCX"/>
+                <constraint firstItem="ilC-hy-JOR" firstAttribute="height" secondItem="1hp-O9-hpg" secondAttribute="height" multiplier="427:600" id="Aum-Al-Mrx"/>
+                <constraint firstItem="BuJ-Tj-HAP" firstAttribute="leading" secondItem="1hp-O9-hpg" secondAttribute="leading" id="L83-d9-vgu"/>
+                <constraint firstItem="BuJ-Tj-HAP" firstAttribute="top" secondItem="1hp-O9-hpg" secondAttribute="top" id="Mi3-aH-ULK"/>
+                <constraint firstItem="ilC-hy-JOR" firstAttribute="width" secondItem="1hp-O9-hpg" secondAttribute="width" multiplier="519:600" id="VFn-xQ-DbH"/>
+                <constraint firstItem="ilC-hy-JOR" firstAttribute="centerY" secondItem="1hp-O9-hpg" secondAttribute="centerY" id="fX4-xg-rwb"/>
+                <constraint firstItem="ilC-hy-JOR" firstAttribute="centerX" secondItem="1hp-O9-hpg" secondAttribute="centerX" id="nli-an-cQM"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

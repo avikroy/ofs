@@ -1,0 +1,94 @@
+Web service Name and key
+
+page name: country.php
+key :
+
+page name: city.php
+key :"country"
+
+page name: colony.php
+key :"city"
+
+page name: register.php
+key  :  "name", "lastname","lastname2","email","password","address","colony","zip","country","city","tel","cel","api"
+
+page name: allusers.php
+key :
+
+page name: userbyid.php
+key :"id"
+
+1)Page Name: {allbusiness.php}
+Key: ” location”,” deliveryType”,” category”,” city”,” filters”,” whereall”;
+Key Parameter:
+location = "{\"latitud\":40.7275043,\"longitud\":73.98006450000003,\"zipcode\":\"10009\",\"zoom\":15}";
+deliveryType = "delivery";
+category = “”;
+city = 0;
+filters = false;
+whereall='{"country":"6","city":"6","delivery_neighborhoodStaus":0,"currency":"USD","ga":"","cityname":"Newyork","collecttype":"delivery","reservestatus":"delivery","address":"NY 10009, United States","resturant":"","cuisines":"","rhour":-1,"rmin":-1,"location":"{\"latitud\":40.7275043,\"longitud\":-73.98006450000003,\"zipcode\":\"10009\",\"zoom\":15}","approved":true,"zipcode":"10009"}';
+
+
+2)Page Name: {fetchallbusinessmenu.php}
+Key: “businessid”,”deliverytype”,”whereall”;
+Key Parameter:
+businessid = '4';
+deliveryType = 'pickup';
+whereall='{"country":"6","city":"6","delivery_neighborhoodStaus":0,"currency":"USD","ga":"","cityname":"Newyork","collecttype":"pickup","reservestatus":"pickup","address":"","resturant":"","cuisines":"","rhour":-1,"rmin":-1,"location":"{\"latitud\":40.7127837,\"longitud\":-74.00594130000002,\"zipcode\":-1,\"zoom\":15}","approved":true,"zipcode":-1}';
+
+3) Page Name:{ businessinfo.php}
+Key:” businessid”
+Key Parameter:
+businessid = ‘4’;
+
+4) Page Name:{ businessdiscountoffer.php}
+Key:” businessid”
+Key Parameter:
+businessid = ‘4’;
+
+5) Page Name:{ businessreview.php}
+Key:” businessid”
+Key Parameter:
+businessid = ‘4’;
+
+
+6) Get Profile
+
+userbyid.php
+$id='1'
+
+7) Photo Upload
+
+photoupload.php
+$_FILES['img']
+
+8) Forget Password
+forgotpassword.php
+$email = $obj->{'email'};
+
+9) Get my order
+
+myorder.php
+$usr = -1;
+
+10) Update profile
+
+updateuserbyid.php
+for update user
+need val;ue
+
+$id = 1;
+$name = 'aaa';
+$lastname = 'bb';
+$lastname2 = 'cc';
+$email = 'cbcb58@gmail.com';
+$password = '12345';
+$address = 'kolkata';
+$colony = 'sss';
+$zip = '452';
+$city = '1';
+$country = '1';
+$tel = '545415';
+$cel = '545415';
+$api = '54';
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountrySelectionViewController">
+            <connections>
+                <outlet property="tblDisplay" destination="9po-4l-CAd" id="a8x-zw-FXs"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Zd0-D7-g0C">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9po-4l-CAd">
+                    <rect key="frame" x="41" y="86" width="519" height="427"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Gig-aE-e9n"/>
+                        <outlet property="delegate" destination="-1" id="7IN-cO-ony"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="9po-4l-CAd" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="BBW-3L-Aw8"/>
+                <constraint firstItem="Zd0-D7-g0C" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ccm-55-TZl"/>
+                <constraint firstAttribute="bottom" secondItem="Zd0-D7-g0C" secondAttribute="bottom" id="FNk-fS-Fda"/>
+                <constraint firstItem="9po-4l-CAd" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="427:600" id="J9N-Bd-96k"/>
+                <constraint firstAttribute="trailing" secondItem="Zd0-D7-g0C" secondAttribute="trailing" id="Wje-V8-p0d"/>
+                <constraint firstItem="9po-4l-CAd" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="519:600" id="cZE-4w-XYV"/>
+                <constraint firstItem="9po-4l-CAd" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tw5-be-GXR"/>
+                <constraint firstItem="Zd0-D7-g0C" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="xRc-eb-1E2"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,6 @@
+Use for Location Manager permission:
+[self.locationManager requestWhenInUseAuthorization]
+[self.locationManager requestAlwaysAuthorization]
+
+
+You have to set the NSAllowsArbitraryLoads key to YES under NSAppTransportSecurity dictionary in your .plist file. Hope this helps!

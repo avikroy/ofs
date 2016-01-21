@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="GeJ-Dr-zvM">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="geg-Tv-Imn">
+                    <rect key="frame" x="10" y="10" width="280" height="120"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pk6-4a-R3u">
+                    <rect key="frame" x="10" y="10" width="280" height="120"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizza Hut" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZY-93-ylU">
+                            <rect key="frame" x="8" y="8" width="70" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hb0-0f-afx" customClass="RatingView">
+                            <rect key="frame" x="8" y="31" width="88" height="15"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(4 Ratings)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScA-qa-HND">
+                            <rect key="frame" x="97" y="31" width="67" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="4" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grand Street, New York" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdC-Nb-lpy">
+                            <rect key="frame" x="8" y="51" width="143" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" tag="5" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Distance: 1.5 Miles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UNC-eh-L94">
+                            <rect key="frame" x="8" y="72" width="113" height="16"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ugj-Oo-nMn" customClass="PaymentSupportView">
+                            <rect key="frame" x="8" y="93" width="264" height="15"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jZY-93-ylU" secondAttribute="trailing" constant="8" id="23L-eO-ksw"/>
+                        <constraint firstAttribute="trailing" secondItem="Ugj-Oo-nMn" secondAttribute="trailing" constant="8" id="3HI-nh-prb"/>
+                        <constraint firstItem="jZY-93-ylU" firstAttribute="leading" secondItem="Pk6-4a-R3u" secondAttribute="leading" constant="8" id="5To-H7-Y02"/>
+                        <constraint firstItem="zdC-Nb-lpy" firstAttribute="leading" secondItem="Hb0-0f-afx" secondAttribute="leading" id="9Yz-TC-fzI"/>
+                        <constraint firstItem="Hb0-0f-afx" firstAttribute="height" secondItem="Pk6-4a-R3u" secondAttribute="height" multiplier="15:120" id="Cyh-xj-Qyu"/>
+                        <constraint firstItem="UNC-eh-L94" firstAttribute="leading" secondItem="zdC-Nb-lpy" secondAttribute="leading" id="Dg4-9W-fH1"/>
+                        <constraint firstItem="zdC-Nb-lpy" firstAttribute="top" secondItem="ScA-qa-HND" secondAttribute="bottom" constant="5" id="J0k-iv-A8v"/>
+                        <constraint firstItem="Hb0-0f-afx" firstAttribute="top" secondItem="jZY-93-ylU" secondAttribute="bottom" constant="5" id="JeJ-vl-1f2"/>
+                        <constraint firstItem="jZY-93-ylU" firstAttribute="top" secondItem="Pk6-4a-R3u" secondAttribute="top" constant="8" id="NoR-Os-yN9"/>
+                        <constraint firstItem="Ugj-Oo-nMn" firstAttribute="top" secondItem="UNC-eh-L94" secondAttribute="bottom" constant="5" id="XAF-GK-iLs"/>
+                        <constraint firstItem="Ugj-Oo-nMn" firstAttribute="leading" secondItem="Pk6-4a-R3u" secondAttribute="leading" constant="8" id="Xxz-n0-6mT"/>
+                        <constraint firstItem="ScA-qa-HND" firstAttribute="centerY" secondItem="Hb0-0f-afx" secondAttribute="centerY" id="anZ-wg-myy"/>
+                        <constraint firstItem="ScA-qa-HND" firstAttribute="height" secondItem="Hb0-0f-afx" secondAttribute="height" id="dVi-Ml-EuS"/>
+                        <constraint firstItem="Hb0-0f-afx" firstAttribute="width" secondItem="jZY-93-ylU" secondAttribute="width" multiplier="88:70" id="fiV-Ro-hmJ"/>
+                        <constraint firstItem="ScA-qa-HND" firstAttribute="leading" secondItem="Hb0-0f-afx" secondAttribute="trailing" constant="1" id="hCh-fF-8rb"/>
+                        <constraint firstItem="UNC-eh-L94" firstAttribute="top" secondItem="zdC-Nb-lpy" secondAttribute="bottom" constant="5" id="j7H-KE-4iN"/>
+                        <constraint firstItem="Ugj-Oo-nMn" firstAttribute="height" secondItem="Pk6-4a-R3u" secondAttribute="height" multiplier="15:120" id="lyW-vV-mw2"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UNC-eh-L94" secondAttribute="trailing" constant="8" id="osO-bK-mVb"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zdC-Nb-lpy" secondAttribute="trailing" constant="8" id="ts6-2H-Oas"/>
+                        <constraint firstItem="Hb0-0f-afx" firstAttribute="leading" secondItem="jZY-93-ylU" secondAttribute="leading" id="xE2-w6-v2U"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="geg-Tv-Imn" firstAttribute="top" secondItem="GeJ-Dr-zvM" secondAttribute="top" constant="10" id="BND-eX-n8P"/>
+                <constraint firstItem="Pk6-4a-R3u" firstAttribute="bottom" secondItem="geg-Tv-Imn" secondAttribute="bottom" id="DW4-Wg-yY2"/>
+                <constraint firstItem="Pk6-4a-R3u" firstAttribute="trailing" secondItem="geg-Tv-Imn" secondAttribute="trailing" id="KSX-Bl-bkf"/>
+                <constraint firstItem="geg-Tv-Imn" firstAttribute="leading" secondItem="GeJ-Dr-zvM" secondAttribute="leading" constant="10" id="OIc-gk-0Fu"/>
+                <constraint firstAttribute="bottom" secondItem="geg-Tv-Imn" secondAttribute="bottom" constant="20" id="gBt-hi-IFl"/>
+                <constraint firstItem="Pk6-4a-R3u" firstAttribute="top" secondItem="geg-Tv-Imn" secondAttribute="top" id="mEe-Dd-JGP"/>
+                <constraint firstAttribute="trailing" secondItem="geg-Tv-Imn" secondAttribute="trailing" constant="10" id="py8-zL-eZ1"/>
+                <constraint firstItem="Pk6-4a-R3u" firstAttribute="leading" secondItem="geg-Tv-Imn" secondAttribute="leading" id="sbS-UA-7xa"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="417" y="400"/>
+        </view>
+    </objects>
+</document>
